@@ -89,7 +89,46 @@ This project demonstrates how I create the Active Directory infrastructure withi
 </p>
 <p>
 
-  - Next, I went back into azure and selected Client-1.
-  - Under the Network Settings, I selected "Network Interface / IP Configuration"
+  - Next, I went back into Azure and navigated to the Netwrok Settings for Client-1.
+  - Under the Network Settings, I selected "Network Interface / IP Configuration".
 
+</p>
+<br />
+
+<p>
+<img src="https://github.com/user-attachments/assets/ecd4b37d-7ba8-4983-980b-922b17786bd8" width=800 />
+</p>
+<p>
+
+  - I selected "DNS Servers", clicked Custom, and entered the Private IP address for DC-1.
+
+</p>
+<br />
+
+<p>
+<img src="https://github.com/user-attachments/assets/5724092e-2e60-4ab8-b683-5a051f55657d" width=400/>
+</p>
+<p>
+
+  - Next, I opened Remote Desktop Connection and connected to Client-1 by entering the Public IP address.
+
+</p>
+<br />
+
+<p>
+<img src="https://github.com/user-attachments/assets/8518c74d-1a3d-4556-a5ff-276b105a841f" width=800 />
+</p>
+<p>
+
+  - After connecting to Client-1, I opened Powershell and entered the command "ping 10.0.0.4" to test the connection between Client-1 and DC-1.
+
+</p>
+<br />
+
+<p>
+<img src="https://github.com/user-attachments/assets/ad769d3f-9490-428a-9218-7c5f2bddc848" width=800 />
+</p>
+<p>
+
+  - To finish the project, I ensured that the DNS Server of Client-1 was set the DC-1's Private IP address by entering the command "ipconfig /all".
 
